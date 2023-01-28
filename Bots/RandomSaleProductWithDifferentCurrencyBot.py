@@ -161,9 +161,9 @@ class RandomSaleProductWithDifferentCurrencyBot:
         # close the browser
         self.browser.quit()
 
-def runRandomSaleProductWithDifferentCurrencyBot():
-    randomSaleProductWithDifferentCurrency = RandomSaleProductWithDifferentCurrencyBot(False)
-    randomSaleProductWithDifferentCurrency.login_skinsfair(3)
+def run():
+    randomSaleProductWithDifferentCurrency = RandomSaleProductWithDifferentCurrencyBot(True)
+    # randomSaleProductWithDifferentCurrency.login_skinsfair(3)
     randomSaleProductWithDifferentCurrency.activate_tracking(3)
     randomSaleProductWithDifferentCurrency.login_my_account(False, 3)
     randomSaleProductWithDifferentCurrency.change_currency(5)
@@ -178,4 +178,4 @@ def runRandomSaleProductWithDifferentCurrencyBot():
     randomSaleProductWithDifferentCurrency.close_browser()
 
 if __name__ == "__main__":
-    runRandomSaleProductWithDifferentCurrencyBot()
+    run()

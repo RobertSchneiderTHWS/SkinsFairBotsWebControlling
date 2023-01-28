@@ -270,11 +270,11 @@ class RandomUserClickingBot:
         # close the browser
         self.browser.quit()
 
-def runRandomUserClickingBot():
-    randomUserClickingBot = RandomUserClickingBot(False)
-    randomUserClickingBot.login_skinsfair(3)
+def run():
+    randomUserClickingBot = RandomUserClickingBot(True)
+    # randomUserClickingBot.login_skinsfair(3)
     randomUserClickingBot.activate_tracking(3)
-    randomUserClickingBot.login_my_account(True, 3)
+    randomUserClickingBot.login_my_account(False, 3)
     randomUserClickingBot.select_random_tab_of_products(3)
     randomUserClickingBot.change_currency(5)
     randomUserClickingBot.click_random_link_footer(3)
@@ -296,4 +296,4 @@ def runRandomUserClickingBot():
     randomUserClickingBot.close_browser()
 
 if __name__ == "__main__":
-    runRandomUserClickingBot()
+    run()

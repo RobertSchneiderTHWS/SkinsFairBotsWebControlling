@@ -156,9 +156,9 @@ class CustomerJourneyBot:
         # close the browser
         self.browser.quit()
 
-def runCustomerJourneyBot():
-    customer_journey_bot = CustomerJourneyBot(False)
-    customer_journey_bot.login_skinsfair(3)
+def run():
+    customer_journey_bot = CustomerJourneyBot(True)
+    # customer_journey_bot.login_skinsfair(3)
     customer_journey_bot.activate_tracking(3)
     customer_journey_bot.select_random_tab_of_products(3)
     customer_journey_bot.select_random_product_of_tab(3)
@@ -172,4 +172,4 @@ def runCustomerJourneyBot():
     customer_journey_bot.close_browser()
 
 if __name__ == "__main__":
-    runCustomerJourneyBot()
+    run()

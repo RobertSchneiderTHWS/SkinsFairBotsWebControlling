@@ -127,9 +127,9 @@ class DeleteCartBot:
         # close the browser
         self.browser.quit()
 
-def runDeleteCartBot():
-    deleteCartBot = DeleteCartBot(False)
-    deleteCartBot.login_skinsfair(3)
+def run():
+    deleteCartBot = DeleteCartBot(True)
+    # deleteCartBot.login_skinsfair(3)
     deleteCartBot.activate_tracking(3)
     deleteCartBot.login_my_account(False, 3)
     deleteCartBot.change_currency(5)
@@ -141,4 +141,4 @@ def runDeleteCartBot():
     deleteCartBot.close_browser()
 
 if __name__ == "__main__":
-    runDeleteCartBot()
+    run()

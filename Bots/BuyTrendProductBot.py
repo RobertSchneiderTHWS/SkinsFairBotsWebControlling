@@ -139,9 +139,9 @@ class BuyTrendProductBot:
         # close the browser
         self.browser.quit()
 
-def runBuyTrendProductBot():
-    buyTrendProductBot = BuyTrendProductBot(False)
-    buyTrendProductBot.login_skinsfair(3)
+def run():
+    buyTrendProductBot = BuyTrendProductBot(True)
+    # buyTrendProductBot.login_skinsfair(3)
     buyTrendProductBot.activate_tracking(3)
     buyTrendProductBot.select_random_sale_product(3)
     buyTrendProductBot.check_item_needs_option(3)
@@ -153,4 +153,4 @@ def runBuyTrendProductBot():
     buyTrendProductBot.close_browser()
 
 if __name__ == "__main__":
-    runBuyTrendProductBot()
+    run()
