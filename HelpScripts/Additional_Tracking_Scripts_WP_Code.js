@@ -1,3 +1,4 @@
+// These Scripts are in the WPCode Extension for WordPress
 
 // original_sale_product_price
 document.addEventListener('DOMContentLoaded', function() {
